@@ -13,3 +13,11 @@ describe("Purchase", function() {
   });
  });
 });
+describe("Category", function() {
+  describe('createCategory', function() {
+    it("returns an array of categories", function() {
+      var testCategory = Category.createCategory("Household");
+      Category.allCategories.should.eql([testCategory]);
+    });
+  });
+});
